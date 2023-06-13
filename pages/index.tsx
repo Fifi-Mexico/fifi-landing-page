@@ -10,8 +10,33 @@ export default function Home() {
     <>
       <Head>
         <title>Fifi México - Mejore su experiencia en restaurantes</title>
+        {/* Primary Meta Tags */}
+        <meta name='title' content='Fifi App - Mejore su experiencia en restaurantes' />
+        <meta
+          name='description'
+          content='Simplifica el proceso de pedidos en restaurantes con nuestra aplicación móvil. Explora menús, realiza pedidos y paga de forma rápida y segura, sin esperas ni complicaciones.'
+        />
+        {/* Open Graph / Facebook */}
+        <meta property='og:type' content='website' />
+        <meta property='og:url' content='https://fifi-app.netlify.app/' />
+        <meta property='og:title' content='Fifi App - Mejore su experiencia en restaurantes' />
+        <meta
+          property='og:description'
+          content='Simplifica el proceso de pedidos en restaurantes con nuestra aplicación móvil. Explora menús, realiza pedidos y paga de forma rápida y segura, sin esperas ni complicaciones.'
+        />
+        <meta property='og:image' content='https://i.imgur.com/ikVTd4l.png' />
+        {/* Twitter */}
+        <meta property='twitter:card' content='summary_large_image' />
+        <meta property='twitter:url' content='https://fifi-app.netlify.app/' />
+        <meta property='twitter:title' content='Fifi App - Mejore su experiencia en restaurantes' />
+        <meta
+          property='twitter:description'
+          content='Simplifica el proceso de pedidos en restaurantes con nuestra aplicación móvil. Explora menús, realiza pedidos y paga de forma rápida y segura, sin esperas ni complicaciones.'
+        />
+        <meta property='twitter:image' content='https://i.imgur.com/ikVTd4l.png' />
+        {/* Other Tags */}
         <meta name='viewport' content='width=device-width, initial-scale=1' />
-        <link rel='icon' type='image/x-png' href='/assets/static/original.png' />
+        <link rel='icon' type='image/x-png' href='/favicon.png' />
       </Head>
       <Header />
       <main>
