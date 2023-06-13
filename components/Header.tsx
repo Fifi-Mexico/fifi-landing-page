@@ -47,7 +47,7 @@ const Header = () => {
                     <div className='flex flex-col gap-4'>
                       <a
                         className='inline-flex justify-center rounded-lg py-2 px-3 text-sm font-semibold outline-2 outline-offset-2 transition-colors bg-gray-800 text-white hover:bg-gray-900 active:bg-gray-800 active:text-white/80'
-                        href='/#'>
+                        href='#'>
                         Descargar la aplicación
                       </a>
                     </div>
