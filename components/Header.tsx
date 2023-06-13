@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Header = () => {
   return (
@@ -7,9 +8,9 @@ const Header = () => {
       <nav>
         <div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-50 flex justify-between py-8'>
           <div className='relative z-10 flex items-center gap-16'>
-            <a aria-label='Home' href='/'>
+            <Link aria-label='Home' href='/'>
               <Image src='/assets/static/original.png' alt='logo' width={80} height={80} />
-            </a>
+            </Link>
           </div>
           <div className='flex items-center gap-6'>
             <div className='lg:hidden' data-headlessui-state=''>
@@ -27,7 +28,7 @@ const Header = () => {
             </div>
             <a
               className='inline-flex justify-center rounded-lg py-2 px-3 text-sm font-semibold outline-2 outline-offset-2 transition-colors bg-gray-800 text-white hover:bg-gray-900 active:bg-gray-800 active:text-white/80 hidden lg:block'
-              href='/#'>
+              href='#'>
               Descargar
             </a>
           </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Footer = () => {
   return (
@@ -17,14 +18,14 @@ const Footer = () => {
             <nav className='mt-11 flex gap-8'>
               <a
                 className='relative -mx-3 -my-2 rounded-lg px-3 py-2 text-sm text-gray-700 transition-colors delay-150 hover:text-gray-900 hover:delay-[0ms]'
-                href='/#features'>
+                href='#features'>
                 <span className='relative z-10'>Características</span>
               </a>
-              <a
+              <Link
                 className='relative -mx-3 -my-2 rounded-lg px-3 py-2 text-sm text-gray-700 transition-colors delay-150 hover:text-gray-900 hover:delay-[0ms]'
                 href='/cultura'>
                 <span className='relative z-10'>Cultura</span>
-              </a>
+              </Link>
               {/* <a
                 className='relative -mx-3 -my-2 rounded-lg px-3 py-2 text-sm text-gray-700 transition-colors delay-150 hover:text-gray-900 hover:delay-[0ms]'
                 href='/#pricing'>
