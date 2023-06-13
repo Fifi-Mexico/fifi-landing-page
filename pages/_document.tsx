@@ -5,17 +5,16 @@ export default function Document() {
   return (
     <Html lang='es-MX'>
       <Head>
-        <Script async src='https://www.googletagmanager.com/gtag/js?id=G-EZWF1W7RHN' />
-        <Script
-          id='gtag'
-          dangerouslySetInnerHTML={{
-            __html: `window.dataLayer = window.dataLayer || [];
-                    function gtag(){dataLayer.push(arguments);}
-                    gtag('js', new Date());
-                  
-                    gtag('config', 'G-EZWF1W7RHN');`,
-          }}
-        />
+        <Script src='https://www.googletagmanager.com/gtag/js?id=G-EZWF1W7RHN' strategy='afterInteractive' />
+        <Script id='google-analytics' strategy='afterInteractive'>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-EZWF1W7RHN');
+          `}
+        </Script>
       </Head>
       <body>
         <Main />
