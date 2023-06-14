@@ -20,10 +20,11 @@ export default function Document() {
             var cpm = {};
             (function(h,u,b){
               var d=h.getElementsByTagName("script")[0],e=h.createElement("script");
-              e.async=true;e.src='https://cdn.cookiehub.eu/c2/7664d83d.js';
+              e.async=true;e.src='https://cdn.cookiehub.eu/c2/e0d237f9.js';
               e.onload=function(){u.cookiehub.load(b);};
               d.parentNode.insertBefore(e,d);
             })(document,window,cpm);
+
           `}
         </Script>
       </Head>
